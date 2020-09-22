@@ -7,6 +7,38 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Style for top tabs */
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+  overflow: hidden;
+  /* position: fixed; */
+	top: 7vh;
+	left: 3vw;
+	min-width: 100%;
+	min-height: 2vh;
+	margin: 0 0 2em 0;
+}
+
+/* Floats list Left */
+li a {
+  float: left;
+}
+
+/*  */
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1vh 2vh;
+  text-decoration: none;
+}
+/* Changes color of tab when mouse hovers */
+li a:hover {
+  background-color: #4A546B;
+}
+
 @-moz-keyframes spinner {
 	0% {
 		-moz-transform: rotate(0deg);
@@ -98,7 +130,7 @@ body {
 }
 
 ol, ul {
-	list-style: none;
+	list-style-type: none;
 }
 
 blockquote, q {
@@ -789,7 +821,7 @@ input, select, textarea {
 /* List */
 
 	ol {
-		list-style: decimal;
+		list-style-type: decimal;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
 	}
@@ -799,7 +831,7 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
+		list-style-type: none;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
@@ -809,7 +841,7 @@ input, select, textarea {
 		}
 
 		ul.alt {
-			list-style: none;
+			list-style-type: none;
 			padding-left: 0;
 		}
 
@@ -845,7 +877,7 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		cursor: default;
-		list-style: none;
+		list-style-type: none;
 		margin-left: -1em;
 		padding-left: 0;
 	}
@@ -963,7 +995,7 @@ input, select, textarea {
 
 	ul.icons {
 		cursor: default;
-		list-style: none;
+		list-style-type: none;
 		padding-left: 0;
 	}
 
@@ -1513,7 +1545,7 @@ input, select, textarea {
 		}
 
 			#header nav > ul {
-				list-style: none;
+				list-style-type: none;
 				margin: 0;
 				padding: 0;
 			}
