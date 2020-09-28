@@ -29,14 +29,14 @@ li a {
 /*  */
 li a {
   display: inline-block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 1vh 2vh;
   text-decoration: none;
 }
 /* Changes color of tab when mouse hovers */
 li a:hover {
-  background-color: #4A546B;
+  /* background-color: #9d9fa3; */
 }
 
 @-moz-keyframes spinner {

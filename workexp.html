@@ -14,6 +14,11 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<style>
+	.des{
+		font-size:1vw;
+		text-align:justify;
+		color:black;
+	}
 	.pfp {
  float: left;
  padding: 0 10px 0 0;}
@@ -38,7 +43,18 @@
 		.titles {
       display: inline-block; /* show on the same line */
       padding-right: 5px; /* small gap on the right of each header */
+			color:black;
     }
+		.sub {
+      padding-right: 5px; /* small gap on the right of each header */
+			color:black;
+			font-weight: 400;
+    }
+		.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 		/* h1 {
 			display: inline-block;
 			vertical-align: text-bottom;
@@ -48,14 +64,15 @@
 			vertical-align: text-bottom;
 		} */
   </style>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="workexp.html">Relevant Experience</a></li>
+		<li><a href="workexp.html">Resume (Coming Soon)</a></li>
+	</ul>
 
-	<body class="is-preload">
-		<p style ="font-size:60px;margin:0;padding:0;margin-left: 2vw	">Aidan Winter</p>
-				<ul>
-				  <li><a href="index.html">Portfolio</a></li>
-				  <li><a href="workexp.html">Relevant Experience</a></li>
-					<li><a href="workexp.html">Design & Coding (Coming Soon)</a></li>
-				</ul>
+	<body class="is-preload"style="background-color:white;">
+		<p style ="font-size:60px;margin:0;padding:0;text-align:center;color:black;">Projects</p>
+
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -74,116 +91,99 @@
 					<div id="main">
 					</div>
 
-
 <div class="leftContainer">
-	<h1 class="titles">Desktop Metal</h1>
-	<h3 class ="titles">JAN – JUN 2020</h3>
-      <p style="font-size:1vw;text-align:justify">At Dekstop Metal, I was a part of the SPJ R&D team. I collaborated with other
-				engineers on the team to work on the carriage of one of the printers. I created excel
-				worksheets to output viable sizes for building materials based on different constriants.
-				I then utilized these options to create ideal fixtures to simulate the center of gravity
-				with both the correct location and  mass.<br><br>
+	<div class="row">
+	<img src="images/fulls/mk1trans.png" width="49%"  alt="Assembly Box" >
+	<img src="images/fulls/mk2trans.png" width="49%"  alt="Assembly Box">
+	<p>Mk1 & Mk2</p>
+	<img src="images/fulls/14.jpg" width="49%"  alt="Assembly Box">
+	<img src="images/fulls/16.jpg" width="49%"  alt="Assembly Box">
+	<p>Final Version & Scaled Down Version</p>
+	<br><br><br><br><br><br>
+	<img src="images/fulls/21.jpg" width="100%" alt="Tube Stretcher">
+	<br><br><br><br><br><br>
+	<img src="images/fulls/22.jpg" width="100%" alt="Torsional Test">
+</div>
+</div>
 
-				I performed exhuastive research on a key factor and created fixtures designed to
-				mitigate the influence of said factor. I also designed tests to prove whether or not
-				said factor was going to be a problem, or if it could be ignored. I also designed
-				several other testing fixtures and rigs to test different elements, systems, and parts
-				of the printer in order to valdiate design deciscions. <br><br>
+<div class="rightContainer">
+		<h1 class ="titles">Assembly Box</h1>
+			<h3 class ="sub">Problem:</h3>
+				<p class="des">
+					– Create fixture which will house multiple pieces while they are heat treated<br>
+					– Must be easy to use<br>
+					– Must house multiple pieces at once<br>
+					– Withstand temperature without deformation <br>
+					– Cost effective<br>
+					–	Must be highly accurate<br>
+					– Meet certification requirements<br>
+				</p>
+			<h3 class ="sub">Action:</h3>
+				<p class="des">
+					– Used dowel pins to keep build accurate<br>
+					– Guided design around cheapest sizes of stock<br>
+					– Made all same material to remove need for thermal constraints<br>
+					– Added inner sheet metal to help remove felt as well as bottom holes to remove suction effect<br>
+					– Conferenced with engineer in charge of production to determine how many at once (9) <br>
+					– RoHS & REACH compliant<br>
+				</p>
+			<h3 class ="sub">Result:</h3>
+				<p class="des">
+					– Successfully implemented<br>
+					– Fixture was well within budget<br>
+					– Easy to use<br>
+					– Was scalable so I created a smaller version a month later in a couple hours for a similar use
+				</p><br>
 
-				For every fixture I designed, I created professional drawings following ANSI GD&T
-				standards. I also hosted several design reviews for some of them and got feedback
-				from different engineers on the team.<br><br>
+	<h1 class ="titles">Tube Stretcher</h1>
+		<h3 class ="sub">Problem:</h3>
+			<p class="des">
+				– Tubes need to be stretched by a machine not people<br>
+				– Must be semi-automatic<br>
+				– More efficient than stretching by hand<br>
+				– Simple enough to use by anyone<br>
+				– Safe to run<br>
+				–	Adjustable<br>
+				–	Accurate enough to stretch to consistent length<br>
+			</p>
+		<h3 class ="sub">Action:</h3>
+			<p class="des">
+				– Research best way to stretch (motor with ball screw)<br>
+				– Used limit switches to stop movement to prevent breaking and injury<br>
+				– Added a slot to move bounds of travel<br>
+				– Used excess parts found in storage to lower cost<br>
+				– Added a transparent shield to protect user<br>
+				–	Stretches 12 at once to save time<br>
+			</p>
+		<h3 class ="sub">Results:</h3>
+			<p class="des">
+				– Successfully stretched 12 tube at a time to proper length<br>
+				– Saved thousands of dollars and countless hours per year<br>
+				– Performed testing and vlaidation to implement machine on workfloor<br>
+			</p><br>
 
-				I also spearheaded the organization of different components across different teams.
-				I organized meetings and brought people together in order to verify that components
-				were up to date and agreed upon by all parties. In the end, I created a living spreadsheet
-				that houses hundreds of parts with extensive labeled specifications across mutiple teams. <br><br>
-
-	<h1 class="titles">Nova Biomedical</h1>
-	<h3 class ="titles">JAN – JUN 2019</h3>
-	<p style="font-size:1vw;text-align:justify">
-		During my time at Nova Biomedical, I worked on many various tasks utltilzing and further developing
-		many unique skills.<br><br>
-
-		I performed numerous validations on different machinery in the building. I also worked on different
-		tests and performed statistical analysis in order to locate the source of an on-going problem
-		in the production process of a fixture. <br><br>
-
-		I studied the assembly process of component and was able to pin-point critical points where time
-		and money could be saved. I also worked on projects such as the tube stretcher (seen right) which
-		also saved both extensive amounts of time and money.<br><br>
-
-		I also became very familiar with various different forms of engineering documentation. I wrote numerous
-		forms and documents such as ECOs, AP's, TP's, OP's, and OI's.<br><br>
-
-	<h1 class="titles">Baja SAE</h1>
-	<h3 class ="titles">SEP 2017 – PRESENT</h3>
-	<p style="font-size:1vw;text-align:justify">Since this May, I have been the Chassis 2WD Team Lead and have been responsible for the completion of <br>
-		the frame. I have hosted meetings and spent countless hours in SolidWorks working on finishing what <br>
-		part of the frame was passed on to me. Recently, the points where the suspension and drivetrain connect <br>
-		to the the chassis are being modified. They will now be moved to different locations and I will be <br>
-		working to make the necessary edits to the frame to allow for the new connection points. <br><br>
-
-		Sophmore year I spent my summer on the chassis sub-team where I undertook the task of running a Torsional test <br>
-		on an older frame. This test was something <br><br>
-
-		I spent my freshmen and the better part of my sophmore years on the team down in the machine shop<br>
-		spending countless hours machining many different parts across different machines. I can TIG weld,<br>
-		comfortably use a milling machine, lathe, and many other machines as well as hand tools.<br>
-		I also have performed maintance on the car including swapping out broken parts for replacements<br>
-		and bleeding brakes.
-		<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
-		<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
-		<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
-		<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
-
-	</div>
-	<div class="rightContainer">
-		<h1 class ="titles">Center of Mass</h1>
-		<h3 class ="titles">(Getting Replaced)</h3>
-		<img src="" width="45%"  alt="Weights"> <br>
-		<p style="font-size:1vw;text-align:justify">One of the many challenges I faced at Desktop Metal, was modeling the weight of the carriage of
-			the printer. The weight needed to be repsented accurately, both in terms of mass and center
-			of gravity. The given time was very short as the motor was going to be calibrated within a couple
-			weeks. While I was able to create models in order to acheive this goal within the set time,
-			the problem came with the quoted lead time. While it was possible to be rushed, we didn't
-			wan't to go that route unless absolutely neccessary. The first step I took was disregarding
-			the C.O.G. and instead just focusing on mass. I managed to create mockups using an excel
-			sheet to give possible combinations given a mass and only using standard steel sizes.
-			Although it was possible, the distributors nearby did not have the required steel in stock.
-			The end solution was buying barbell plates from a store and attaching them with cylinders
-			and zipties. While not ideal, it allowed the motor to be calibrated accurately enough
-			until the real weights would be made.<br></p>
-
-			<h1 class ="titles">Tube Stretcher</h1>
-		<img src="images/fulls/21.jpg" width="45%" alt="Tube Stretcher"> <br>
-		<p style="font-size:1vw;text-align:justify">
-			The tube stretcher was designed as certain tubes needed to be pre-stretched in border
-			for them to work as designed. In the past, they had been stretched by hand and it wasted
-			both time and money. I was tasked with creating a semi-automatic tube stretcher. I worked
-			with both a fellow co-op to come up with the design, as well as an electrical engineer
-			to help set up the wiring properly. The machine needed to not only stretch the tubes to the
-			approriate length, but it needed to be designed to both	be simple to use, and effiecent.
-			The result was the design above. It can stretch 12 tubes at once and has a built in fail safe
-			to prevent it from stretching too much in either direction. This allows the user to be able
-			to walk away while it operates, if necessary. In the end, it was much faster and allowed for
-			time savings in the manufacturing process.<br></p>
 
 			<h1 class ="titles">Torsional Test</h1>
-		<img src="images/fulls/22.jpg" width="45%" alt="Torsional Test">
-		<p style="font-size:1vw;text-align:justify">
-			One of the biggest challenges I undertook during my time on the Baja team, was designing
-			and executing the Torsional Test. The Torsional Test was something the team had been
-			trying to perform for several years at that point. I decided to take control of it
-			and see it through. The goal was to compare the results of a physical test on an older
-			frame (pictured above) to a simulation in SolidWorks FEA in order to validate that what
-			is being seen in the simulations matches what the team sees in real life performance. I
-			first had to perform a great deal of research to determine both what a Torsional test
-			consisted off, and the best way to perform one. I looked at the results of a Formula SAE
-			teams's torsional test and applied the concepts to our frame. I then finished creating the
-			inital design rig and performed the physical test to a mockup in SolidWorks. The result
-			was that the two tests were not as similar as the team had hoped. We are now looking into
-			using different software such as ANSYS to see if we can get the answers we are looking for.<br></p>
+			<h3 class ="sub">Problem:</h3>
+				<p class="des">
+					– Need to verify that simutlaions is similar enough to real life<br>
+					– Will be done via a torsional test<br>
+					– Test needs to work both in real life and in simulation<br>
+				</p>
+			<h3 class ="sub">Action:</h3>
+				<p class="des">
+					– Researched torsional tests in similar applications (Formula SAE)<br>
+					– Designed around existing hardware (front lever and rear brace never used)<br>
+					– Researched proper way to simulate test in SolidWorks FEA<br>
+					– Designed and executed test<br>
+					– Compared results against each other<br>
+				</p>
+			<h3 class ="sub">Results:</h3>
+				<p class="des">
+					– Determined results were not what was hoped for<br>
+					– Started process to look for alternative simulation software<br>
+					– Will be using ANSYS in the future<br>
+				</p><br><br><br><br>
 	</div>
 
 
